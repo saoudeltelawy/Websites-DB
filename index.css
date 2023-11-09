@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #29323c, #485563);
+  height: 100vh;
+  min-width: 500px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  border: 2px solid #7591b2;
+  border-radius: 7px;
+}
+
+.btn {
+  appearance: button;
+  background-color: #1899d6;
+  border: solid transparent;
+  border-radius: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1;
+  outline: none;
+  padding: 13px 16px;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  white-space: nowrap;
+  margin-top: 10px;
+  margin-right: 8px;
+}
+
+.btn:after {
+  background-clip: padding-box;
+  background-color: #1cb0f6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.btn:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+#delete-all-btn {
+  background: rgb(170, 3, 3);
+}
+
+#delete-all-btn:after {
+  background-color: rgb(170, 3, 3);
+}
+
+/* tab-btn */
+
+#tab-btn {
+  background: #24588c;
+}
+
+#tab-btn:after {
+  background-color: #24588c;
+}
+
+.delete-btn {
+  background: rgba(170, 3, 3, 0.863);
+  color: #ffff;
+  border: none;
+  cursor: pointer;
+  padding: 3px 5px;
+  margin-left: 0.5rem;
+}
+
+.delete-btn:hover {
+  background-color: rgba(170, 1, 12, 0.79);
+}
+
+ul {
+  list-style: none;
+  padding: 8px 10px;
+  margin-top: 1.125rem;
+}
+
+li {
+  border-bottom: 1px solid #4098ff4f;
+  border-width: thick;
+  width: fit-content;
+  text-align: center;
+  margin-bottom: 0.65rem;
+  padding-bottom: 5px;
+}
+
+li a {
+  color: #9bcee6b8;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-shadow: 0 0 3px black;
+  transition: all 0.4s ease-in-out;
+  word-break: break-all;
+  white-space: pre-wrap;
+  min-width: max-content;
+}
+
+li a:hover {
+  color: rgb(240 255 255 / 100%);
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .btn {
+    width: fit-content;
+    font-size: 0.7rem;
+  }
+  li a {
+    font-size: 1rem;
+    white-space: pre-line;
+    word-break: break-all;
+    white-space: pre-wrap;
+  }
+}
